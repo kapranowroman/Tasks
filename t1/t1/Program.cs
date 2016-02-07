@@ -11,22 +11,22 @@ namespace ConsoleApplication1
         static void Main(string[] args)
         {
             bool a = true;
-            while  (a==true)
+            while (a == true)
             {
                 Console.WriteLine("Введите радиус окружности: ");
                 double r = double.Parse(Console.ReadLine());
-                if (r >= 0)
+                if (r > 0)
                 {
                     double c = Math.PI * 2 * r;
                     Console.WriteLine("Длина окружности равна: " + c);
                     Console.WriteLine("Хотите продолжить?   y/n ");
-                    if (Console.ReadLine()=="n")
+                    if (Console.ReadLine() == "n")
                     {
                         a = false;
                     }
                 }
-                else 
-                { 
+                else
+                {
                     Console.WriteLine("Ошибка");
                     Console.ReadKey();
 
