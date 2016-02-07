@@ -19,8 +19,8 @@ namespace ConsoleApplication1
                 {
                     double c = Math.PI * 2 * r;
                     Console.WriteLine("Длина окружности равна: " + c);
-                    Console.WriteLine("Хотите продолжить?   y/n ");
-                    if (Console.ReadLine() == "n")
+                    Console.WriteLine("Для продолжения введите: y");
+                    if (Console.ReadLine() != "y")
                     {
                         a = false;
                     }

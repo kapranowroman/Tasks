@@ -19,8 +19,8 @@ namespace t2
                 {
                     double v = Math.PI * 4 * Math.Pow(r, 3) / 3; ;
                     Console.WriteLine("Объем шара: " + v);
-                    Console.WriteLine("Хотите продолжить?   y/n ");
-                    if (Console.ReadLine() == "n")
+                    Console.WriteLine("Для продолжения введите: y");
+                    if (Console.ReadLine() != "y")
                     {
                         a = false;
                     }

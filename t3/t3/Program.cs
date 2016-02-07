@@ -21,8 +21,8 @@ namespace t2
                 {
                     double s = a * h / 2; ;
                     Console.WriteLine("Площадь треугольника: " + s);
-                    Console.WriteLine("Хотите продолжить?   y/n ");
-                    if (Console.ReadLine() == "n")
+                    Console.WriteLine("Для продолжения введите: y");
+                    if (Console.ReadLine() != "y")
                     {
                         t = false;
                     }
