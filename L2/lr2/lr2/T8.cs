@@ -19,6 +19,7 @@ namespace lr2
             this.Y = Y;
             this.Z = Z;
             this.test = test;
+            
         }
 
         public double number(double X, double Y, double Z)
