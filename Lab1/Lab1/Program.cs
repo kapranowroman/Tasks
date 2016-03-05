@@ -19,67 +19,32 @@ namespace Lab1
                 int numberLab;
                 Int32.TryParse(Console.ReadLine(), out numberLab);
                 int numberTask;
-                
+
+
+                //словарь с задачами
+                Dictionary<int, ILab1Executor> Executors = new Dictionary<int, ILab1Executor>();
+                Executors.Add(1, new L1task1());
+                Executors.Add(2, new L1task2());
+                Executors.Add(3, new L1task3());
+
                 switch (numberLab)
                 {
+                        
                    
                     case 1:
-                        lab1 Laba1 = new lab1();
+                        lab1Calc Laba1 = new lab1Calc();
                         Console.WriteLine("Введите номер задачи 1-10");
                         Int32.TryParse(Console.ReadLine(), out numberTask);
-
-                        if (numberTask == 1)
+                        
+                        if (Executors.ContainsKey(numberTask)) 
                         {
-                            double R;
-                            Console.WriteLine("Введите значение радиуса R");
-                            double.TryParse(Console.ReadLine(), out R);
-                            
-                            try
-                            {
-                                Console.WriteLine("Длина окружности:  " + Laba1.task1(R));
-                            }
-                            catch (ArgumentException)
-                            {
-                                Console.WriteLine("Введено не корректное значение радиуса");
-                            }
-                           
+                            ILab1Executor Temp = Executors[numberTask];
+                            Temp.Execute(Laba1);
                         }
-                        if (numberTask == 2)
-                        {
-                            double R;
-                            Console.WriteLine("Введите значение радиуса R");
-                            double.TryParse(Console.ReadLine(), out R);
-                            try
-                            {
-                                
-                                Console.WriteLine("Объем шара:  " + Laba1.task2(R));
-                            }
-                            catch (ArgumentException)
-                            {
-                                
-                                Console.WriteLine("Введено не корректное значение радиуса");
-                            }
 
-                        }
-                        if (numberTask == 3)
-                        {
-                            double A;
-                            double H;
-                            Console.WriteLine("Введите основание а");
-                            double.TryParse(Console.ReadLine(), out A);
-                            Console.WriteLine("Введите высоту h");
-                            double.TryParse(Console.ReadLine(), out H);
-                            
-                            try
-                            {
-                                Console.WriteLine("Площадь треугольника:  " + Laba1.task3(A,H));
-                            }
-                            catch (ArgumentException)
-                            {
-                                Console.WriteLine("Одно из введенных значений не корректно");
-                            }
 
-                        }
+ 
+                        
                         if (numberTask == 4)
                         {
                             double R;

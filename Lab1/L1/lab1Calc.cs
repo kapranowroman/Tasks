@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace L1
 {
-    public class lab1
+    public class lab1Calc
     {
         //Задача №1 Вычислить длину окружности по формуле C=2πR
         public double task1(double R)

@@ -9,13 +9,13 @@ namespace UnitTestProject1
     [TestClass]
     public class task1
     {
-        lab1 obj = new lab1();
+        lab1Calc obj = new lab1Calc();
         //tests task1
         [TestMethod]
         public void t1ValidPositive()
         {
             double result = obj.task1(1);
-            Assert.AreEqual(6.2831, result, 0.0001);
+            Assert.AreEqual(6.2831, result,0.0001);
 
         }
         [TestMethod]
@@ -43,7 +43,7 @@ namespace UnitTestProject1
     [TestClass]
     public class task2
     {
-        lab1 obj = new lab1();
+        lab1Calc obj = new lab1Calc();
 
         [TestMethod]
         public void t2ValidPositive()
@@ -79,7 +79,7 @@ namespace UnitTestProject1
     [TestClass]
     public class task3
     {
-        lab1 obj = new lab1();
+        lab1Calc obj = new lab1Calc();
 
         [TestMethod]
         public void PositiveAH()
@@ -122,7 +122,7 @@ namespace UnitTestProject1
     [TestClass]
     public class task4
     {
-        lab1 obj = new lab1();
+        lab1Calc obj = new lab1Calc();
 
         [TestMethod]
         public void test1()
@@ -174,7 +174,7 @@ namespace UnitTestProject1
     [TestClass]
     public class task5
     {
-        lab1 obj = new lab1();
+        lab1Calc obj = new lab1Calc();
 
         [TestMethod]
         public void test1()
@@ -224,7 +224,7 @@ namespace UnitTestProject1
     [TestClass]
     public class task6
     {
-        lab1 obj = new lab1();
+        lab1Calc obj = new lab1Calc();
 
         [TestMethod]
         public void test1()
@@ -271,7 +271,7 @@ namespace UnitTestProject1
     
         public class task7
         {
-            lab1 obj = new lab1();
+            lab1Calc obj = new lab1Calc();
 
             [TestMethod]
             public void test1()
@@ -314,7 +314,7 @@ namespace UnitTestProject1
 
         public class task8_9
         {
-            lab1 obj = new lab1();
+            lab1Calc obj = new lab1Calc();
 
             [TestMethod]
             public void test1ValidA()
@@ -353,7 +353,7 @@ namespace UnitTestProject1
 
         public class task10
         {
-            lab1 obj = new lab1();
+            lab1Calc obj = new lab1Calc();
 
             [TestMethod]
             public void test1Valid()

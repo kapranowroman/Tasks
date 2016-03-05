@@ -41,6 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FileRead.cs" />
+    <Compile Include="ILab1Executor.cs" />
+    <Compile Include="L1task1.cs" />
+    <Compile Include="L1task2.cs" />
+    <Compile Include="L1task3.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
