@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace L1
+namespace Calculator
 {
     public class lab1Calc
     {
@@ -57,7 +57,7 @@ namespace L1
             }
             else if (grad >= 360)
             {
-                return (grad - grad * (Math.Truncate(grad / 360))) * Math.PI / 180;
+                return (grad - 360 * (Math.Truncate(grad / 360))) * Math.PI / 180;
             }
             else
             {
@@ -99,7 +99,7 @@ namespace L1
             }
             else
             {
-                throw new ArgumentException("Длина куба не может быть < 0");
+                throw new ArgumentException("Длина ребра куба не может быть < 0");
             }
         }
         

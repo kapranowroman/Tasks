@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Lab1;
-using L1;
+using Calculator;
 using System.Collections.Generic;
 
 namespace UnitTestProject1

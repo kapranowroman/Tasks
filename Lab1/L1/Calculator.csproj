@@ -7,7 +7,7 @@
     <ProjectGuid>{9C0736E7-C0F8-4C0F-9899-17D990A609CC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>L1</RootNamespace>
+    <RootNamespace>Calculator</RootNamespace>
     <AssemblyName>L1</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -40,7 +40,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="lab1Calc.cs" />
-    <Compile Include="Lab2.cs" />
+    <Compile Include="Lab2Calc.cs" />
+    <Compile Include="Lab3Calc.cs" />
     <Compile Include="MyComparer.cs" />
     <Compile Include="MyComparer2.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

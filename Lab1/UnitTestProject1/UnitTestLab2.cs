@@ -1,6 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using L1;
+using Calculator;
 using System.Collections.Generic;
 
 namespace UnitTestProject1
@@ -9,7 +9,7 @@ namespace UnitTestProject1
     [TestClass]
     public class l2_t1
     {       
-        Lab2 obj2 = new Lab2();
+        Lab2Calc obj2 = new Lab2Calc();
         [TestMethod]
         public void test1()
         {
@@ -33,7 +33,7 @@ namespace UnitTestProject1
     [TestClass]
     public class l2_t2
     {
-        Lab2 obj2 = new Lab2();
+        Lab2Calc obj2 = new Lab2Calc();
         [TestMethod]
         public void test1()
         {
@@ -88,7 +88,7 @@ namespace UnitTestProject1
     [TestClass]
     public class l2_t3
     {
-        Lab2 obj2 = new Lab2();
+        Lab2Calc obj2 = new Lab2Calc();
         [TestMethod]
         public void test1()
         {
@@ -142,7 +142,7 @@ namespace UnitTestProject1
     [TestClass]
     public class l2_t4
     {
-        Lab2 obj2 = new Lab2();
+        Lab2Calc obj2 = new Lab2Calc();
         [TestMethod]
         public void test1()
         {
@@ -190,7 +190,7 @@ namespace UnitTestProject1
     [TestClass]
     public class l2_t5
     {
-        Lab2 obj2 = new Lab2();
+        Lab2Calc obj2 = new Lab2Calc();
         [TestMethod]
         public void test1()
         {
@@ -224,7 +224,7 @@ namespace UnitTestProject1
     [TestClass]
     public class l2_t6
     {
-        Lab2 obj2 = new Lab2();
+        Lab2Calc obj2 = new Lab2Calc();
         [TestMethod]
         public void test1()
         {
@@ -258,7 +258,7 @@ namespace UnitTestProject1
     [TestClass]
     public class l2_t7
     {
-        Lab2 obj2 = new Lab2();
+        Lab2Calc obj2 = new Lab2Calc();
         [TestMethod]
         public void test1()
         {
@@ -292,7 +292,7 @@ namespace UnitTestProject1
     [TestClass]
     public class l2_t8
     {
-        Lab2 obj2 = new Lab2();
+        Lab2Calc obj2 = new Lab2Calc();
         [TestMethod]
         public void test1()
         {

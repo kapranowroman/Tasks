@@ -43,9 +43,43 @@
   <ItemGroup>
     <Compile Include="FileRead.cs" />
     <Compile Include="ILab1Executor.cs" />
-    <Compile Include="L1task1.cs" />
-    <Compile Include="L1task2.cs" />
-    <Compile Include="L1task3.cs" />
+    <Compile Include="ILab2Executor.cs" />
+    <Compile Include="ILab3Executor.cs" />
+    <Compile Include="L1\L1task1.cs" />
+    <Compile Include="L1\L1task10.cs" />
+    <Compile Include="L1\L1task2.cs" />
+    <Compile Include="L1\L1task3.cs" />
+    <Compile Include="L1\L1task4.cs" />
+    <Compile Include="L1\L1task6.cs" />
+    <Compile Include="L1\L1task5.cs" />
+    <Compile Include="L1\L1task7.cs" />
+    <Compile Include="L1\L1task8.cs" />
+    <Compile Include="L1\L1task9.cs" />
+    <Compile Include="L2\L2task1.cs" />
+    <Compile Include="L2\L2task2.cs" />
+    <Compile Include="L2\L2task3.cs" />
+    <Compile Include="L2\L2task4.cs" />
+    <Compile Include="L2\L2task5.cs" />
+    <Compile Include="L2\L2task6.cs" />
+    <Compile Include="L2\L2task7.cs" />
+    <Compile Include="L2\L2task8.cs" />
+    <Compile Include="L3\L3task1.cs" />
+    <Compile Include="L3\L3task10.cs" />
+    <Compile Include="L3\L3task11.cs" />
+    <Compile Include="L3\L3task12.cs" />
+    <Compile Include="L3\L3task13.cs" />
+    <Compile Include="L3\L3task14.cs" />
+    <Compile Include="L3\L3task15.cs" />
+    <Compile Include="L3\L3task16.cs" />
+    <Compile Include="L3\L3task17.cs" />
+    <Compile Include="L3\L3task2.cs" />
+    <Compile Include="L3\L3task3.cs" />
+    <Compile Include="L3\L3task4.cs" />
+    <Compile Include="L3\L3task5.cs" />
+    <Compile Include="L3\L3task6.cs" />
+    <Compile Include="L3\L3task7.cs" />
+    <Compile Include="L3\L3task8.cs" />
+    <Compile Include="L3\L3task9.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -53,11 +87,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\L1\L1.csproj">
+    <ProjectReference Include="..\L1\Calculator.csproj">
       <Project>{9c0736e7-c0f8-4c0f-9899-17d990a609cc}</Project>
-      <Name>L1</Name>
+      <Name>Calculator</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

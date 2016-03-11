@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace L1
+namespace Calculator
 {
-    public class Lab2
+    public class Lab2Calc
     {
         //Задача №1 Дано число A. Вывести его абсолютное значение.
         public double task1(double A)

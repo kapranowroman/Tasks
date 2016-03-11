@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using L1;
+using Calculator;
 
 namespace forms
 {
@@ -24,7 +24,8 @@ namespace forms
             double R;
             double.TryParse(txtR.Text, out R);
             txtResult.Text = calculator.task1(R).ToString();
-                        
+            Menu frm = new Menu();
+            frm.ShowDialog();            
         }
     }
 }

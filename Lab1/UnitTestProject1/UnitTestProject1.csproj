@@ -52,16 +52,17 @@
   <ItemGroup>
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnitTestLab3.cs" />
     <Compile Include="UnitTestLab2.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\L1\L1.csproj">
+    <ProjectReference Include="..\L1\Calculator.csproj">
       <Project>{9c0736e7-c0f8-4c0f-9899-17d990a609cc}</Project>
-      <Name>L1</Name>
+      <Name>Calculator</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Lab1\Lab1.csproj">
+    <ProjectReference Include="..\Lab1\Labs.csproj">
       <Project>{f9e56ed1-dc44-49f2-90d6-493ea59da1ce}</Project>
-      <Name>Lab1</Name>
+      <Name>Labs</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

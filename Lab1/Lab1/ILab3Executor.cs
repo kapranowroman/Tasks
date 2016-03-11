@@ -7,8 +7,8 @@ using Calculator;
 
 namespace Lab1
 {
-    interface ILab1Executor
+    interface ILab3Executor
     {
-        void Execute(lab1Calc Calc);
+        void Execute(Lab3Calc Calc);
     }
 }

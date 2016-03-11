@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace L1
+namespace Calculator
 {
     public class MyComparer : IComparer
     {

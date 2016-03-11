@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace forms
+namespace LabForms
 {
     public partial class Menu : Form
     {
@@ -17,23 +17,10 @@ namespace forms
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnLab1Start_Click(object sender, EventArgs e)
         {
-            
-            Form1 frm = new Form1();
-            frm.ShowDialog();
+            Lab1 Lab1 = new Lab1();
+            Lab1.ShowDialog(); 
         }
-
-        private void Menu_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        
     }
 }
