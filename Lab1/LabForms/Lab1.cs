@@ -17,6 +17,8 @@ namespace LabForms
         public Lab1()
         {
             InitializeComponent();
+            controlTask1.SetFunction(new CalculatorTaskDoublToDouble(calculator.task1));
+            controlTask2.SetFunction(new CalculatorTaskDoublToDouble(calculator.task2));
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -35,19 +37,6 @@ namespace LabForms
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            double R;
-            double.TryParse(txtTask1.Text, out R);
-                        
-            try
-            {
-                lblTask1.Text = calculator.task1(R).ToString();
-            }
-            catch (ArgumentException mes)
-            {
-                MessageBox.Show(mes.Message, "Ошибка!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                txtTask1.Text = "0";
-                lblTask1.Text = " ";
-            }
             
         }      
 
@@ -73,19 +62,7 @@ namespace LabForms
 
         private void btnTask2_Click(object sender, EventArgs e)
         {
-            double R;
-            double.TryParse(txtTask2.Text, out R);
-            //lblTask2.Text = calculator.task2(R).ToString();
-            try
-            {
-                lblTask2.Text = calculator.task2(R).ToString();
-            }
-            catch (ArgumentException mes)
-            {
-                MessageBox.Show(mes.Message, "Ошибка!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                txtTask2.Text = "0";
-                lblTask2.Text = " ";
-            }
+            
         }
 
         private void label7_Click(object sender, EventArgs e)
@@ -217,6 +194,11 @@ namespace LabForms
                 lblTask7T.Text = " ";
 
             }
+        }
+
+        private void myControl1_Load(object sender, EventArgs e)
+        {
+
         }
           
     }
