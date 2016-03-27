@@ -1,6 +1,6 @@
 ﻿namespace LabForms
 {
-    partial class MyControl
+    partial class input1Out1Control
     {
         /// <summary> 
         /// Required designer variable.
@@ -72,14 +72,15 @@
             // 
             // lblTextRes
             // 
+            this.lblTextRes.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lblTextRes.AutoSize = true;
-            this.lblTextRes.Location = new System.Drawing.Point(489, 23);
+            this.lblTextRes.Location = new System.Drawing.Point(429, 23);
             this.lblTextRes.Name = "lblTextRes";
-            this.lblTextRes.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lblTextRes.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblTextRes.Size = new System.Drawing.Size(45, 13);
             this.lblTextRes.TabIndex = 2;
             this.lblTextRes.Text = "Объем:";
-            this.lblTextRes.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lblTextRes.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lblTextInput
             // 

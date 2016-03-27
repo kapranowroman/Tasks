@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace LabForms
 {
-    public partial class UserControl1 : input1Out1Control
+    public partial class input2Out1Control : UserControl
     {
-        public UserControl1()
+        public input2Out1Control()
         {
             InitializeComponent();
         }

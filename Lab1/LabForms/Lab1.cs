@@ -19,6 +19,7 @@ namespace LabForms
             InitializeComponent();
             controlTask1.SetFunction(new CalculatorTaskDoublToDouble(calculator.task1));
             controlTask2.SetFunction(new CalculatorTaskDoublToDouble(calculator.task2));
+            controlTask3.SetFunction(new CalculatorTaskDoublToDouble(calculator.task3));
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -40,25 +41,25 @@ namespace LabForms
             
         }      
 
-        private void btnTask3_Click(object sender, EventArgs e)
-        {
-            double A;
-            double H;
-            double.TryParse(txtTask3A.Text, out A);
-            double.TryParse(txtTask3H.Text, out H);
+        //private void btnTask3_Click(object sender, EventArgs e)
+        //{
+          //  double A;
+            //double H;
+            //double.TryParse(txtTask3A.Text, out A);
+            //double.TryParse(txtTask3H.Text, out H);
             //lblTask2.Text = calculator.task2(R).ToString();
-            try
-            {
-                lblTask3S.Text = calculator.task3(A,H).ToString();
-            }
-            catch (ArgumentException mes)
-            {
-                MessageBox.Show(mes.Message, "Ошибка!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                txtTask3A.Text = "0";
-                txtTask3H.Text = "0";
-                lblTask3S.Text = " ";
-            }
-        }
+            //try
+            //{
+              //  lblTask3S.Text = calculator.task3(A,H).ToString();
+            //}
+            //catch (ArgumentException mes)
+            //{
+              //  MessageBox.Show(mes.Message, "Ошибка!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //txtTask3A.Text = "0";
+                //txtTask3H.Text = "0";
+                //lblTask3S.Text = " ";
+            //}
+        //}
 
         private void btnTask2_Click(object sender, EventArgs e)
         {

@@ -28,14 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtTask3H = new System.Windows.Forms.TextBox();
-            this.btnTask3 = new System.Windows.Forms.Button();
-            this.lblTask3S = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txtTask3A = new System.Windows.Forms.TextBox();
             this.Task4 = new System.Windows.Forms.GroupBox();
             this.btnTask4 = new System.Windows.Forms.Button();
             this.lblTask4X = new System.Windows.Forms.Label();
@@ -101,9 +93,11 @@
             this.btnTask10 = new System.Windows.Forms.Button();
             this.label34 = new System.Windows.Forms.Label();
             this.txtTask10X1 = new System.Windows.Forms.TextBox();
-            this.controlTask1 = new LabForms.MyControl();
-            this.controlTask2 = new LabForms.MyControl();
-            this.groupBox3.SuspendLayout();
+            this.myControl2 = new LabForms.input1Out1Control();
+            this.myControl1 = new LabForms.input1Out1Control();
+            this.controlTask1 = new LabForms.input1Out1Control();
+            this.controlTask2 = new LabForms.input1Out1Control();
+            this.controlTask3 = new LabForms.input2Out1Control();
             this.Task4.SuspendLayout();
             this.grpBoxTask5.SuspendLayout();
             this.grpBoxTask6.SuspendLayout();
@@ -112,85 +106,6 @@
             this.grpBoxTask9.SuspendLayout();
             this.grpBoxTask10.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.label3);
-            this.groupBox3.Controls.Add(this.txtTask3H);
-            this.groupBox3.Controls.Add(this.btnTask3);
-            this.groupBox3.Controls.Add(this.lblTask3S);
-            this.groupBox3.Controls.Add(this.label4);
-            this.groupBox3.Controls.Add(this.label7);
-            this.groupBox3.Controls.Add(this.txtTask3A);
-            this.groupBox3.Location = new System.Drawing.Point(12, 118);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(609, 71);
-            this.groupBox3.TabIndex = 6;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Задача №3";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 45);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(152, 13);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Введите значение высоты H\r\n";
-            // 
-            // txtTask3H
-            // 
-            this.txtTask3H.Location = new System.Drawing.Point(235, 45);
-            this.txtTask3H.Name = "txtTask3H";
-            this.txtTask3H.Size = new System.Drawing.Size(66, 20);
-            this.txtTask3H.TabIndex = 5;
-            this.txtTask3H.Text = "0";
-            // 
-            // btnTask3
-            // 
-            this.btnTask3.Location = new System.Drawing.Point(331, 28);
-            this.btnTask3.Name = "btnTask3";
-            this.btnTask3.Size = new System.Drawing.Size(75, 23);
-            this.btnTask3.TabIndex = 4;
-            this.btnTask3.Text = "Рассчитать";
-            this.btnTask3.UseVisualStyleBackColor = true;
-            this.btnTask3.Click += new System.EventHandler(this.btnTask3_Click);
-            // 
-            // lblTask3S
-            // 
-            this.lblTask3S.AutoSize = true;
-            this.lblTask3S.Location = new System.Drawing.Point(537, 33);
-            this.lblTask3S.Name = "lblTask3S";
-            this.lblTask3S.Size = new System.Drawing.Size(10, 13);
-            this.lblTask3S.TabIndex = 3;
-            this.lblTask3S.Text = " ";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(477, 33);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(57, 13);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Площадь:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(6, 23);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(166, 13);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "Введите значение основания А\r\n";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
-            // 
-            // txtTask3A
-            // 
-            this.txtTask3A.Location = new System.Drawing.Point(235, 19);
-            this.txtTask3A.Name = "txtTask3A";
-            this.txtTask3A.Size = new System.Drawing.Size(66, 20);
-            this.txtTask3A.TabIndex = 0;
-            this.txtTask3A.Text = "0";
             // 
             // Task4
             // 
@@ -828,6 +743,27 @@
             this.txtTask10X1.TabIndex = 0;
             this.txtTask10X1.Text = "0";
             // 
+            // myControl2
+            // 
+            this.myControl2.ControlName = "Задача №1";
+            this.myControl2.ControlTextInput = "Введите значение радиуса R:";
+            this.myControl2.ControlTextRes = "Длина окружности:";
+            this.myControl2.Location = new System.Drawing.Point(6, 14);
+            this.myControl2.Name = "myControl2";
+            this.myControl2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.myControl2.Size = new System.Drawing.Size(650, 57);
+            this.myControl2.TabIndex = 16;
+            // 
+            // myControl1
+            // 
+            this.myControl1.ControlName = "Задача №2";
+            this.myControl1.ControlTextInput = "Введите значение радиуса R:";
+            this.myControl1.ControlTextRes = "Объем:";
+            this.myControl1.Location = new System.Drawing.Point(7, 66);
+            this.myControl1.Name = "myControl1";
+            this.myControl1.Size = new System.Drawing.Size(620, 57);
+            this.myControl1.TabIndex = 15;
+            // 
             // controlTask1
             // 
             this.controlTask1.ControlName = "Задача №1";
@@ -848,14 +784,23 @@
             this.controlTask2.Size = new System.Drawing.Size(620, 57);
             this.controlTask2.TabIndex = 15;
             // 
+            // controlTask3
+            // 
+            //this.controlTask3.ControlName = "Задача №2";
+            //this.controlTask3.ControlTextInput = "Введите радиус R:";
+            //this.controlTask3.ControlTextRes = "Объем шара:";
+            this.controlTask3.Location = new System.Drawing.Point(12, 119);
+            this.controlTask3.Name = "controlTask3";
+            this.controlTask3.Size = new System.Drawing.Size(612, 70);
+            this.controlTask3.TabIndex = 17;
+            // 
             // Lab1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(667, 517);
-            this.Controls.Add(this.controlTask1);
-            this.Controls.Add(this.controlTask2);
+            this.ClientSize = new System.Drawing.Size(752, 517);
+            this.Controls.Add(this.controlTask3);
             this.Controls.Add(this.grpBoxTask10);
             this.Controls.Add(this.grpBoxTask9);
             this.Controls.Add(this.grpTask8);
@@ -863,11 +808,10 @@
             this.Controls.Add(this.grpBoxTask6);
             this.Controls.Add(this.grpBoxTask5);
             this.Controls.Add(this.Task4);
-            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.myControl1);
+            this.Controls.Add(this.myControl2);
             this.Name = "Lab1";
             this.Text = "Lab1";
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
             this.Task4.ResumeLayout(false);
             this.Task4.PerformLayout();
             this.grpBoxTask5.ResumeLayout(false);
@@ -888,14 +832,6 @@
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.TextBox txtTask3H;
-        private System.Windows.Forms.Button btnTask3;
-        private System.Windows.Forms.Label lblTask3S;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txtTask3A;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.GroupBox Task4;
         private System.Windows.Forms.Button btnTask4;
         private System.Windows.Forms.Label lblTask4X;
@@ -961,8 +897,11 @@
         private System.Windows.Forms.Button btnTask10;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.TextBox txtTask10X1;
-        private MyControl controlTask2;
-        private MyControl controlTask1;
+        private input1Out1Control controlTask2;
+        private input1Out1Control controlTask1;
+        private input1Out1Control myControl1;
+        private input1Out1Control myControl2;
+        private input2Out1Control controlTask3;
 
     }
 }

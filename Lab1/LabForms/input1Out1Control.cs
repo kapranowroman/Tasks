@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace LabForms
 {public delegate Double CalculatorTaskDoublToDouble(Double arg);
-    public partial class MyControl : UserControl
+    public partial class input1Out1Control : UserControl
     {
         private CalculatorTaskDoublToDouble FunctionTask;
         private String name;
@@ -55,7 +55,7 @@ namespace LabForms
         }
 
 
-        public MyControl()
+        public input1Out1Control()
         {
             InitializeComponent();
         }
