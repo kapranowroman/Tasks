@@ -126,29 +126,24 @@ WHERE productid = :id;";
            using (NpgsqlConnection connection = getConnection())
            {
                connection.Open();
-               using (NpgsqlTransaction tran = connection.BeginTransaction())
+               using (NpgsqlCommand cmd = new NpgsqlCommand(UPDATE_CMD, connection))
                {
-                   using (NpgsqlCommand cmd = new NpgsqlCommand(UPDATE_CMD, connection))
-                   {
-                       var p = cmd.Parameters.Add(new NpgsqlParameter(":id", NpgsqlDbType.Uuid));
-                       p.Value = product.id;
-                       p = cmd.Parameters.Add(new NpgsqlParameter(":desc", NpgsqlDbType.Text));
-                       p.Value = product.description;
-                       p = cmd.Parameters.Add(new NpgsqlParameter(":groupid", NpgsqlDbType.Uuid));
-                       p.Value = product.productGroupID;
-                       p = cmd.Parameters.Add(new NpgsqlParameter(":unitid", NpgsqlDbType.Text));
-                       p.Value = product.Unit.getDBName();
-                       p = cmd.Parameters.Add(new NpgsqlParameter(":weight", NpgsqlDbType.Real));
-                       p.Value = product.weight;
-                       p = cmd.Parameters.Add(new NpgsqlParameter(":cost", NpgsqlDbType.Money));
-                       p.Value = product.money;
-                       p = cmd.Parameters.Add(new NpgsqlParameter(":quantity", NpgsqlDbType.Integer));
-                       p.Value = product.quantity;
-                       
-                       bool result = cmd.ExecuteNonQuery() == 1;
-                       tran.Commit();
-                       return result;
-                   }
+                   var p = cmd.Parameters.Add(new NpgsqlParameter(":id", NpgsqlDbType.Uuid));
+                   p.Value = product.id;
+                   p = cmd.Parameters.Add(new NpgsqlParameter(":desc", NpgsqlDbType.Text));
+                   p.Value = product.description;
+                   p = cmd.Parameters.Add(new NpgsqlParameter(":groupid", NpgsqlDbType.Uuid));
+                   p.Value = product.productGroupID;
+                   p = cmd.Parameters.Add(new NpgsqlParameter(":unitid", NpgsqlDbType.Text));
+                   p.Value = product.Unit.getDBName();
+                   p = cmd.Parameters.Add(new NpgsqlParameter(":weight", NpgsqlDbType.Real));
+                   p.Value = product.weight;
+                   p = cmd.Parameters.Add(new NpgsqlParameter(":cost", NpgsqlDbType.Money));
+                   p.Value = product.money;
+                   p = cmd.Parameters.Add(new NpgsqlParameter(":quantity", NpgsqlDbType.Integer));
+                   p.Value = product.quantity;
+
+                   return cmd.ExecuteNonQuery() == 1;
                }
            }
        }
