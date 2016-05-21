@@ -11,6 +11,22 @@ namespace BusinessARM.DAO
 {
     public class EmployeeDAO
     {
+        private NpgsqlConnection getConnection()
+        {
+            return new NpgsqlConnection("Server = localhost; Port = 5432; Database = Business; UserId= business; Password = business;");
+        }
+        private static String CHECK_CMD =
+           @"SELECT count(e.employeeid)
+FROM employees e
+WHERE e.employeeid=:id
+AND ( exists (SELECT 1 FROM positions p WHERE p.managerid=e.employeeid)
+OR
+exists (SELECT 1 FROM orders r WHERE r.employeeid=e.employeeid 
+AND r.finished=true))";
+        private static String UPDATE_CMD =
+            @"UPDATE employees SET 
+position = :position
+WHERE employeeid = :id;";
         public List<Employee> getList()
         {
             NpgsqlConnection connection = new NpgsqlConnection("Server = localhost; Port = 5432; Database = Business; UserId= business; Password = business;");
@@ -65,10 +81,27 @@ FROM employees;"
         { 
         throw new NotImplementedException();
         }
-        public bool update(Employees employee)
+        public bool dismissal(Employees employee)
         {
-            throw new NotImplementedException();
+            using (NpgsqlConnection connection = getConnection())
+            {
+                connection.Open();
+                using (NpgsqlTransaction tran = connection.BeginTransaction())
+                {
+                    using (NpgsqlCommand cmd = new NpgsqlCommand(UPDATE_CMD, connection))
+                    {
+                        var p = cmd.Parameters.Add(new NpgsqlParameter(":id", NpgsqlDbType.Uuid));
+                        p.Value = employee.EmployeeId;
+                        
+
+                        bool result = cmd.ExecuteNonQuery() == 1;
+                        tran.Commit();
+                        return result;
+                    }
+                }
+            }
         }
+
 
     }
 }
